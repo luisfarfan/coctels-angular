@@ -1,0 +1,42 @@
+$topnav-background-color: #03A9F4;
+
+.sidebar {
+  border-radius: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 56px;
+  left: 235px;
+  width: 235px;
+  margin-left: -235px;
+  border: none;
+  border-radius: 0;
+  overflow-y: auto;
+  background-color: $topnav-background-color;
+  bottom: 0;
+  overflow-x: hidden;
+  white-space: nowrap;
+
+  .list-group {
+    a.list-group-item {
+      background: $topnav-background-color;
+      border: 0;
+      border-radius: 0;
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: darken($topnav-background-color, 5%);
+      color: #fff;
+    }
+
+    a.router-link-active {
+      background: darken($topnav-background-color, 5%);
+      color: #fff;
+    }
+  }
+}
+
+.collapsed {
+  width: 60px;
+}

@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "coctels-angular"
+    }
+  },
+  "defaultProject": "coctels-angular",
+  "cli": {
+    "analytics": "0508bbe1-a931-4e13-8a37-e4a545cfdcba"
+  }
 }

@@ -1,0 +1,16 @@
+$topnav-background-color: #03A9F4;
+.navbar {
+  background-color: $topnav-background-color;
+
+  .navbar-brand {
+    color: #fff;
+  }
+
+  .nav-item > a {
+    color: white;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
