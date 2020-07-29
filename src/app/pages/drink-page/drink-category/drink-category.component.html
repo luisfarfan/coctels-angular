@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-4">
+    <app-categories-list [categories]="categories"></app-categories-list>
+  </div>
+  <div class="col-8 text-center">
+    <div class="row mt-2" *ngFor="let drink of drinksSimple?.drinks">
+      <app-drink-simple-detail [drink]="drink"></app-drink-simple-detail>
+    </div>
+  </div>
+</div>

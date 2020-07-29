@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DrinkPageComponent } from './drink-page.component';
+import { DrinkCategoryComponent } from './drink-category/drink-category.component';
 
 const routes: Routes = [
   {
@@ -8,7 +9,16 @@ const routes: Routes = [
     component: DrinkPageComponent
   },
   {
-    path: ':type',
+    path: '',
+    children: [
+      {
+        path: 'category/:type',
+        component: DrinkCategoryComponent
+      },
+    ]
+  },
+  {
+    path: 'drink/:id',
     component: DrinkPageComponent
   }
 ];

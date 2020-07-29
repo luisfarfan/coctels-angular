@@ -1,0 +1,5 @@
+<div class="list-group">
+  <a *ngFor="let item of categories?.drinks" class="list-group-item"
+     [routerLink]="['./']" [queryParams]="{query: item | descriptionFromCategoryDrink}">
+    {{ item | descriptionFromCategoryDrink }}</a>
+</div>

@@ -1,7 +1,7 @@
 <nav [ngClass]="{ sidebarPushRight: true, collapsed: false }" class="sidebar">
   <div class="list-group">
     <a [routerLinkActive]="['router-link-active']" *ngFor="let item of categoriesMenu" class="list-group-item"
-       [routerLink]="['/'+ item.path]">
+       [routerLink]="['/category/'+ item.path]">
       <span>{{ item.name | titlecase  }}</span>
     </a>
   </div>
