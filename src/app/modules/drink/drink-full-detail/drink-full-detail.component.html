@@ -1,0 +1,25 @@
+<div class="card" *ngIf="drink">
+  <img class="card-img-top" [src]="drink.strDrinkThumb" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ drink.strDrink }}</h5>
+    <p class="card-text">{{ drink.strInstructions }}</p>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item list-group-item-primary">Ingredientes</li>
+        <li *ngFor="let i of ingredients" class="list-group-item">{{ drink[i] }}</li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item list-group-item-primary">Measures</li>
+        <li *ngFor="let m of measures" class="list-group-item">{{ drink[m] }}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>

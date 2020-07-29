@@ -4,16 +4,17 @@ import { DrinkSimpleDetailComponent } from './drink-simple-detail/drink-simple-d
 import { CategoriesListComponent } from './categories-list/categories-list.component';
 import { SharedModule } from '../../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { DrinkFullDetailComponent } from './drink-full-detail/drink-full-detail.component';
 
 
 @NgModule({
-  declarations: [DrinkSimpleDetailComponent, CategoriesListComponent],
+  declarations: [DrinkSimpleDetailComponent, CategoriesListComponent, DrinkFullDetailComponent],
   imports: [
     CommonModule,
     SharedModule,
     RouterModule
   ],
-  exports: [DrinkSimpleDetailComponent, CategoriesListComponent]
+  exports: [DrinkSimpleDetailComponent, CategoriesListComponent, DrinkFullDetailComponent]
 })
 export class DrinkModule {
 }
