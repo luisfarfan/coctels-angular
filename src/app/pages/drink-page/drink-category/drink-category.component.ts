@@ -37,6 +37,8 @@ export class DrinkCategoryComponent implements OnInit, OnDestroy {
 
   async getCategories(): Promise<void> {
     this.categories = await this.drinkService.getCategoriesBy(this.category).toPromise();
+    this.drinksSimple = null;
+    this.drinksSimpleFiltered = null;
   }
 
   async getDrinksSimpleDetail(query: string): Promise<void> {
