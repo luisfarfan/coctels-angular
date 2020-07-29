@@ -3,8 +3,9 @@
     <app-categories-list [categories]="categories"></app-categories-list>
   </div>
   <div class="col-8 text-center">
-    <div class="row mt-2" *ngFor="let drink of drinksSimple?.drinks">
-      <app-drink-simple-detail [drink]="drink"></app-drink-simple-detail>
+    <div class="row">
+      <app-drink-search (search)="filteredDrinks($event)"></app-drink-search>
     </div>
+    <app-drink-simple-detail-list [drinksSimple]="drinksSimpleFiltered"></app-drink-simple-detail-list>
   </div>
 </div>
