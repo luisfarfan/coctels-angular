@@ -13,7 +13,6 @@ export class CategoriesListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.categories);
   }
 
 }
